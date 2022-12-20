@@ -1,26 +1,14 @@
 .footer {
 		
 	margin-top: auto;
-// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	--sPT: #{rem(40)};
+	--sPB: #{rem(40)};
 	// --sTPB: #{rem()};
-	&__row{
-		// --bs-gutter-x: #{rem()};
-		--bs-gutter-y: var(--bs-gutter-x);
+	background-color: $primary;
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(80)};
+	}
 
-	}
-	.section-title{
-		
-	}
-	&__col{
-
-	}
-	&__item{
-
-	}
-	&__slide{
-		height: auto;
-	}
 // 
 @include media-breakpoint-up(xl) {}
 

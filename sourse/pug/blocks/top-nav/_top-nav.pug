@@ -1,5 +1,5 @@
 mixin menu-toggle()
-	+b.toggle-menu-mobile--js.d-lg-none
+	+b.toggle-menu-mobile--js
 		span
 mixin mob-mnu()
 	-
@@ -16,18 +16,26 @@ mixin mob-mnu()
 			span
 		+e.inner
 			+mnu()
+			.row.d-md-none
+				.col-auto
+					+e.btn.btn.btn-primary(href="#") Войти
+				.col-auto
+					+e.btn.btn.btn-secondary(href="#") Полная регистрация
+				.col-auto
+					+e.btn.btn.btn-secondary(href="#") Быстрая регистрация
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			.row
-				.col.order-lg-0.order-last
-					.menu-mobile.menu-mobile--js
-						.menu-mobile__inner
-							+menu-toggle()
-							+mnu()
-					
-				.col-auto.d-lg-none
+			+e.row.row
+				.col
 					+menu-toggle()
+					+mob-mnu()
+				.col-auto.d-none.d-md-block
+					+e.btn.btn.btn-primary(href="#") Войти
+				.col-auto.d-none.d-md-block
+					+e.btn.btn.btn-secondary(href="#") Полная регистрация
+				.col-auto.d-none.d-md-block
+					+e.btn.btn.btn-secondary(href="#") Быстрая регистрация
 	// end top-nav

@@ -1,25 +1,17 @@
 .top-nav {
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	padding-top: #{rem(24)};
+	padding-bottom: #{rem(24)};
 	// --sTPB: #{rem()};
 	&__row{
-		// --bs-gutter-x: #{rem()};
-		--bs-gutter-y: var(--bs-gutter-x);
+		--bs-gutter-x: #{rem(8)};
 
+		align-items: center;
 	}
-	.section-title{
-		
+	&__btn {
+		@include media-breakpoint-up(md) {
+			--bs-btn-padding-x: #{rem(11)};
+		}
 	}
-	&__col{
-
-	}
-	&__item{
-
-	}
-	&__slide{
-		height: auto;
-	}
-
 	@include media-breakpoint-up(md) {}
 
 	@include media-breakpoint-up(sm) {}

@@ -540,3 +540,27 @@ iframe {
 		object-fit: cover;
 	}
 }
+
+.btn-primary {
+	--bs-btn-color: #{$teal};
+	--bs-btn-bg: #{$primary};
+	--bs-btn-border-color: #{$primary};
+	--bs-btn-hover-color: #{$primary};
+	--bs-btn-hover-bg: #{$teal};
+	--bs-btn-hover-border-color: #{$teal};
+	--bs-btn-active-color: #{$primary};
+	--bs-btn-active-bg: #{$teal};
+	--bs-btn-active-border-color: #{$teal};
+}
+
+.btn-secondary {
+	--bs-btn-color: #{$primary};
+	--bs-btn-bg: #{$secondary};
+	--bs-btn-border-color: transparent;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #{$primary};
+	--bs-btn-hover-border-color: #{$primary};
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #{$primary};
+	--bs-btn-active-border-color: #{$primary};
+}
