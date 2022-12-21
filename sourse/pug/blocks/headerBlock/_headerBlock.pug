@@ -4,15 +4,19 @@ mixin headerBlock()
 		.container
 			+e.slider--js.swiper
 				.swiper-wrapper
-					mixin slide()
-						+e.slide.swiper-slide
-							+img('img/svg/logo2.svg').img
-							h1 Росмолодёжь.События
-							.h3 платформа, на&nbsp;которой собраны события и&nbsp;мероприятия для молодых
-							+img('img/headerBlock-bg-1.png').bg.res-i
-					+slide()
-					+slide()
-					+slide()
+					mixin slide(img, title, text, logo='svg/logo2.svg', email)
+						+e.slide.swiper-slide&attributes(attributes)
+							+img(`img/${logo}`).img
+							.h1!= title
+							if text
+								.h3!= text
+							if email
+								+e.email(href="mailto:fadm.gov.ru") fadm.gov.ru
+							+img(`img/${img}`).bg.res-i
+					+slide('headerBlock-bg-1.png', 'Росмолодёжь.События', 'платформа, на&nbsp;которой собраны события и&nbsp;мероприятия для молодых')
+					+slide('headerBlock-bg-2.jpg', 'Платформа,<br>на которой собраны<br>все мероприятия<br>для молодых' , '')(style="--bgColor: #8C64D7;")
+					+slide('headerBlock-bg-3.png', 'Молодые —<br>главный драйвер<br>развития страны', '', 'svg/logo3.svg', 'true')(style="--bgColor: #DAEF14; --textColor: #252525;")
+					+slide('headerBlock-bg-4.png', 'Превращаем<br>мечты<br>в возможности', '', 'logo4.png')(style="--bgColor: #8C64D7;")
 				+e.controls
 					+arrow
 					.swiper-pagination

@@ -9,7 +9,7 @@
 		--sPB: #{rem(33.600)};
 	}
 	&__slider {
-		background-color: #9D7DE0;
+		// background-color: #9D7DE0;
 		position: relative;
 		border-radius: 32px;
 	}
@@ -17,6 +17,8 @@
 		position: relative;
 		z-index: 1;
 		padding: rem(30) rem(30) rem(70) rem(30);
+		background: var(--bgColor, #9D7DE0);
+		height: auto;
 		@include media-breakpoint-up(sm) {
 			padding: rem(40) rem(40) rem(80) rem(40);
 		}
@@ -33,16 +35,17 @@
 				max-width: 140px;
 			}
 		}
-		h1 {
-			color: #fff;
+		.h1 {
+			color: var(--textColor, #fff);
 			margin-bottom: rem(24);
-			line-height: 1.15em;
+			// line-height: 1.15em;
+			line-height: 1em;
 			@include media-breakpoint-down(sm) {
 				font-size: 20px;
 			}
 		}
 		.h3 {
-			color: #fff;
+			color: var(--textColor, #fff);
 			max-width: rem(663);
 			margin-bottom: rem(20);
 			@include media-breakpoint-down(sm) {
@@ -56,6 +59,9 @@
 			z-index: -1;
 			// display: none;
 			opacity: .4;
+			pointer-events: none;
+			height: 100%;
+    	object-fit: cover;
 			@include media-breakpoint-up(md) {
 				// display: block;
 				opacity: .6;
@@ -132,6 +138,21 @@
 			&-active {
 				background-color: #fff;
 			}
+		}
+	}
+	&__email {
+		display: inline-block;
+		font-size: rem(23);
+		border: 1px solid $gray-900;
+		border-radius: 150px;
+		padding: rem(2.903) rem(19);
+		margin-bottom: rem(25);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(50);
+			font-size: rem(40);
+		}
+		&:not(:hover) {
+			color: $gray-900;
 		}
 	}
 	@include media-breakpoint-up(xl) {}
