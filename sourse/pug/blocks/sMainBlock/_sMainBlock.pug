@@ -1,0 +1,10 @@
+mixin sMainBlock(title)
+	// start sMainBlock
+	+b.SECTION.sMainBlock.section#sMainBlock&attributes(attributes)
+		.container
+			+b.section-title
+				h2!= title
+			+e.wrapper
+				block
+			+e.btn.btn.btn-outline-primary(href="#") Показать еще
+	// end sMainBlock

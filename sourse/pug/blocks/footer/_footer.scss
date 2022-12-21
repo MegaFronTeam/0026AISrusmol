@@ -1,5 +1,4 @@
 .footer {
-		
 	margin-top: auto;
 	--sPT: #{rem(40)};
 	--sPB: #{rem(40)};
@@ -8,7 +7,68 @@
 	@include media-breakpoint-up(lg) {
 		--sPT: #{rem(80)};
 	}
+	ul {
+		--bs-gutter-y: #{rem(18.400)};
+		list-style-type: none;
+		margin-top: calc(var(--bs-gutter-y) * -1);
+		margin-bottom: 0;
+		li {
+			margin-top: var(--bs-gutter-y);
+			display: inline-block;
+			width: 100%;
+			a {
+				color: #fff;
+				&:hover {
+					color: $teal;
+				}
+			}
+		}
+	}
+	&__inner-row {
+		--bs-gutter-y: #{rem(27.200)};
+		a {
+			&:hover {
+				color: #b6c712;
+			}
+		}
+	}
+	&__title {
+		font-size: rem(12);
+		color: #fff;
+		margin-bottom: rem(6);
+	}
+	&__text {
+		font-size: rem(14);
+		color: $teal;
+	}
+	&__tel {
+		font-size: rem(24);
+		color: #fff;
+		&:hover {
+			color: $teal;
+		}
+	}
+	&__row {
+		--bs-gutter-y: #{rem(24)};
 
+		margin-bottom: rem(19);
+		@include media-breakpoint-up(md) {
+			--bs-gutter-y: #{rem(6)};
+
+			margin-bottom: rem(38);
+		}
+	}
+	&__col {
+		align-self: center;
+	}
+	&__bottom-text {
+		font-size: rem(14);
+		font-weight: 500;
+		color: #fff;
+		line-height: calc(16/14);
+		padding-top: rem(34);
+		border-top: 1px solid rgba($color: #fff, $alpha: .5);
+	}
 // 
 @include media-breakpoint-up(xl) {}
 

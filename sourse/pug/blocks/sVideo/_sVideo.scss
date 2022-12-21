@@ -1,0 +1,32 @@
+// start .sVideo
+.sVideo {
+	// --sPT: #{rem()};
+	--sPB: #{rem(53)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(md) {
+		--sPB: #{rem(106)};
+	}
+	&__video-wrap {
+		@include block(678, 678);
+		border-radius: 32px;
+		overflow: hidden;
+		@include media-breakpoint-up(sm) {
+			--ratio: 678/1310;
+		}
+		& > * {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sVideo

@@ -1,11 +1,42 @@
 mixin footer()
 	+b.FOOTER.footer.section
 		.container
-			.row
-				.col-lg-2
+			+e.row.row
+				.col-md-12.col-lg-2
 					a(href="#") 
 						+img('img/svg/logo.svg')
-
-				.col Footer
-				.col
-				.col-auto
+				.col-6.col-lg-2
+					ul
+						li: a(href="#") Мероприятия
+						li: a(href="#") Участники
+						li: a(href="#") Вакансии
+						li: a(href="#") Гранты
+						li: a(href="#") Опросы
+						li: a(href="#") Новости
+				.col-6.col-lg-5
+					ul
+						li: a(href="#") Помощь
+						li: a(href="#") Профилактика негативных проявлений
+						li: a(href="#") Мониторинг показателей федеральных проектов
+						li: a(href="#") Контакты
+				.col-md-12.col-lg-3
+					+e.inner-row.row
+						.col-12
+							+e.title Адрес
+							+e.text 109028, Москва, Большой Трехсвятительский переулок, д. 2/1, стр.&nbsp;2, Китай-город
+						.col-12
+							.row
+								.col
+									+e.title Понедельник&nbsp;&mdash; Четверг
+									+e.text 9:00&nbsp;&mdash; 18:00
+								.col
+									+e.title Пятница
+									+e.text 9:00&nbsp;&mdash; 16:45
+						.col-12
+							+e.title Электронная почта
+							+e.text(href="mailto:Op@fadm.gov.ru") Op@fadm.gov.ru
+				+e.col.col
+					+soc()
+				.col-md-auto.col-lg-3
+					+e.tel(href="tel:+74956688008") +7 (495) 668-80-08
+			+e.bottom-text © 2008-2022 Федеральное агентство по делам молодежи (Росмолодёжь)

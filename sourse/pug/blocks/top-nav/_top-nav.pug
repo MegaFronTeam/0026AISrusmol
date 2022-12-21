@@ -12,11 +12,11 @@ mixin mob-mnu()
 		//- let dataJson = JSON.parse(json);
 	//- h1= dataJson['lala'] 
 	+b.menu-mobile--js
-		+b.toggle-menu-mobile--js
-			span
 		+e.inner
+			+b.toggle-menu-mobile--js
+				span
 			+mnu()
-			.row.d-md-none
+			+e.row.row.d-md-none
 				.col-auto
 					+e.btn.btn.btn-primary(href="#") Войти
 				.col-auto
@@ -31,7 +31,6 @@ mixin top-nav()
 			+e.row.row
 				.col
 					+menu-toggle()
-					+mob-mnu()
 				.col-auto.d-none.d-md-block
 					+e.btn.btn.btn-primary(href="#") Войти
 				.col-auto.d-none.d-md-block

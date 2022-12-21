@@ -11,8 +11,44 @@
 		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body class="main-page">
+	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
+			<div class="menu-mobile menu-mobile--js">
+				<div class="menu-mobile__inner">
+					<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+					</div>
+					<nav>
+						<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Мероприятия</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Участники</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Вакансии</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Гранты</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Опросы</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Помощь</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">FAQ</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Профилактика негативных проявлений</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Мониторинг показателей федеральных проектов</a></li>
+							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="menu-mobile__row row d-md-none">
+						<div class="col-auto">
+							<a class="menu-mobile__btn btn btn-primary" href="#">Войти
+							</a>
+						</div>
+						<div class="col-auto">
+							<a class="menu-mobile__btn btn btn-secondary" href="#">Полная регистрация
+							</a>
+						</div>
+						<div class="col-auto">
+							<a class="menu-mobile__btn btn btn-secondary" href="#">Быстрая регистрация
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  мобильное меню-->
 			<!-- start header-->
 			<header class="header" id="header">
 				<!-- start top-nav-->
@@ -22,36 +58,6 @@
 							<div class="col">
 								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 								</div>
-								<div class="menu-mobile menu-mobile--js">
-									<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-									</div>
-									<div class="menu-mobile__inner">
-										<nav>
-											<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
-											</ul>
-										</nav>
-										<div class="row d-md-none">
-											<div class="col-auto">
-												<a class="menu-mobile__btn btn btn-primary" href="#">Войти
-												</a>
-											</div>
-											<div class="col-auto">
-												<a class="menu-mobile__btn btn btn-secondary" href="#">Полная регистрация
-												</a>
-											</div>
-											<div class="col-auto">
-												<a class="menu-mobile__btn btn btn-secondary" href="#">Быстрая регистрация
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!--  мобильное меню-->
 							</div>
 							<div class="col-auto d-none d-md-block">
 								<a class="top-nav__btn btn btn-primary" href="#">Войти
@@ -75,220 +81,297 @@
 				<!-- start headerBlock-->
 				<div class="headerBlock section" id="headerBlock">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-						</div>
-						<div class="row"></div>
-					</div>
-				</div>
-				<!-- end headerBlock-->
-				<!-- start sCatalog-->
-				<div class="sCatalog section">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sCatalog</h2>
-							<p>Выкупаем проблемные автомобили в день обращения</p>
-						</div>
-						<div class="sCatalog__row row">
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-1.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+						<div class="headerBlock__slider headerBlock__slider--js swiper">
+							<div class="swiper-wrapper">
+									<div class="headerBlock__slide swiper-slide"><img class="img" src="img/svg/logo2.svg" alt="" loading="lazy"/>
+										<h1>Росмолодёжь.События</h1>
+										<div class="h3">платформа, на&nbsp;которой собраны события и&nbsp;мероприятия для молодых</div><img class="bg res-i" src="img/headerBlock-bg-1.png" alt="" loading="lazy"/>
 									</div>
-								</article>
-								<!-- /.product-item-->
+									<div class="headerBlock__slide swiper-slide"><img class="img" src="img/svg/logo2.svg" alt="" loading="lazy"/>
+										<h1>Росмолодёжь.События</h1>
+										<div class="h3">платформа, на&nbsp;которой собраны события и&nbsp;мероприятия для молодых</div><img class="bg res-i" src="img/headerBlock-bg-1.png" alt="" loading="lazy"/>
+									</div>
+									<div class="headerBlock__slide swiper-slide"><img class="img" src="img/svg/logo2.svg" alt="" loading="lazy"/>
+										<h1>Росмолодёжь.События</h1>
+										<div class="h3">платформа, на&nbsp;которой собраны события и&nbsp;мероприятия для молодых</div><img class="bg res-i" src="img/headerBlock-bg-1.png" alt="" loading="lazy"/>
+									</div>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-2.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-3.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-4.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-5.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-6.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-7.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-8.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="headerBlock__controls">
+								<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+									<svg class="icon icon-chevron-left ">
+										<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+									</svg>
+								</div>
+								<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+									<svg class="icon icon-chevron-right ">
+										<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+									</svg>
+								</div>
+								<div class="swiper-pagination"></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- end sCatalog-->
-				<!-- start sForm-->
-				<section class="sForm section" id="sForm">
+				<!-- end headerBlock-->
+				<!-- start sMainBlock-->
+				<section class="sMainBlock section" id="sMainBlock">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sForm</h2>
+						<div class="section-title">
+							<h2>Мероприятия</h2>
 						</div>
-						<div class="sForm__row row">
+						<div class="sMainBlock__wrapper">
+							<div class="sMainBlock__row row">
+								<div class="col-lg-6">
+									<div class="sMainBlock__item">
+										<div class="row">
+											<div class="sMainBlock__img-col col-sm order-sm-last">
+												<a class="sMainBlock__img-wrap" href="#">
+													<div class="img-wrap-center"><img class="object-fit-js" src="img/mainblock-img-1.png" alt="" loading="lazy"/>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm">
+												<div class="sMainBlock__content"><a class="h5" href="#">Творческий конкурс молодых талантов &laquo;Стань звездой 2022&raquo;</a>
+													<p>27 октября 2022 г. Чебоксары</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="sMainBlock__item">
+										<div class="row">
+											<div class="sMainBlock__img-col col-sm order-sm-last">
+												<a class="sMainBlock__img-wrap" href="#">
+													<div class="img-wrap-center"><img class="object-fit-js" src="img/mainblock-img-1.png" alt="" loading="lazy"/>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm">
+												<div class="sMainBlock__content"><a class="h5" href="#">Творческий конкурс молодых талантов &laquo;Стань звездой 2022&raquo;</a>
+													<p>27 октября 2022 г. Чебоксары</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="sMainBlock__item">
+										<div class="row">
+											<div class="sMainBlock__img-col col-sm order-sm-last">
+												<a class="sMainBlock__img-wrap" href="#">
+													<div class="img-wrap-center"><img class="object-fit-js" src="img/mainblock-img-1.png" alt="" loading="lazy"/>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm">
+												<div class="sMainBlock__content"><a class="h5" href="#">Творческий конкурс молодых талантов &laquo;Стань звездой 2022&raquo;</a>
+													<p>27 октября 2022 г. Чебоксары</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="sMainBlock__item">
+										<div class="row">
+											<div class="sMainBlock__img-col col-sm order-sm-last">
+												<a class="sMainBlock__img-wrap" href="#">
+													<div class="img-wrap-center"><img class="object-fit-js" src="img/mainblock-img-1.png" alt="" loading="lazy"/>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm">
+												<div class="sMainBlock__content"><a class="h5" href="#">Творческий конкурс молодых талантов &laquo;Стань звездой 2022&raquo;</a>
+													<p>27 октября 2022 г. Чебоксары</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="form-wrap">
-							<form>
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-							</form>
-						</div>
+						<a class="sMainBlock__btn btn btn-outline-primary" href="#">Показать еще
+						</a>
 					</div>
 				</section>
-				<!-- end sForm-->
+				<!-- end sMainBlock-->
 				<!-- start sContact-->
 				<section class="sContact section" id="sContact">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sContact</h2>
-						</div>
-						<div class="sContact__row row">
+						<div class="sContact__wrap"><img src="img/sContact-img-1.png" alt="" loading="lazy"/>
+							<div class="sContact__content">
+								<h2>Стань участником</h2>
+								<h3>Регистрация даёт расширенные возможности участникам</h3>
+								<p>Вы&nbsp;сможете принимать участие в&nbsp;мероприятиях и&nbsp;проектах, создавать собственную историю успеха, демонстрировать свои достижения, развитие компетенций и&nbsp;многое другое</p><a class="btn btn-primary" href="#">Подать заявку</a>
+							</div>
 						</div>
 					</div>
 				</section>
 				<!-- end sContact-->
+				<!-- start sMainBlock-->
+				<section class="sMainBlock section" id="sMainBlock">
+					<div class="container">
+						<div class="section-title">
+							<h2>Обучающие программы</h2>
+						</div>
+						<div class="sMainBlock__wrapper">
+							<div class="sMainBlock__row row">
+								<div class="col-sm-6 col-lg-4">
+									<a class="sMainBlock__program" href="#" style="--bgColor: #DAEF14; --textColor: #252525;"><img src="img/program-img-1.png" alt="" loading="lazy"/>
+										<h4>Академия<br>Росмолодёжь.Гранты</h4>
+										<p>Учим запускать и&nbsp;масштабировать социальные проекты в&nbsp;России</p>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a class="sMainBlock__program" href="#"><img src="img/program-img-2.png" alt="" loading="lazy"/>
+										<h4>Всероссийская программа по&nbsp;развитию молодёжного предпринимательства</h4>
+										<p>Учим открывать<br>и&nbsp;развинтить своё дело</p>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a class="sMainBlock__program" href="#" style="--bgColor: #9D7DE0;"><img src="img/program-img-3.png" alt="" loading="lazy"/>
+										<h4>Обучающие курсы<br>от Росмолодёжи</h4>
+										<p>Развивайся вместе с&nbsp;Росмолодёжью&nbsp;&mdash; ведь день, когда мы&nbsp;не&nbsp;узнали<br>новое&nbsp;&mdash; неудачный день</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a class="sMainBlock__btn btn btn-outline-primary" href="#">Показать еще
+						</a>
+					</div>
+				</section>
+				<!-- end sMainBlock-->
+				<!-- start sMainBlock-->
+				<section class="sMainBlock section" id="sMainBlock">
+					<div class="container">
+						<div class="section-title">
+							<h2>Новости</h2>
+						</div>
+						<div class="sMainBlock__wrapper">
+							<div class="sMainBlock__row row">
+								<div class="col-sm-6 col-lg-4">
+									<a class="sMainBlock__news" href="#"><img class="res-i" src="img/news-img-1.png" alt="" loading="lazy"/>
+										<div class="row">
+											<div class="col-auto"><span>18 июля 2022</span></div>
+											<div class="col-auto"><span>17:19</span></div>
+										</div>
+										<p>Концерт на&nbsp;стройке и&nbsp;джаз на&nbsp;берегу моря: на&nbsp;&laquo;Тавриде&raquo; завершился самый музыкальный заезд сезона</p>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a class="sMainBlock__news" href="#"><img class="res-i" src="img/news-img-2.png" alt="" loading="lazy"/>
+										<div class="row">
+											<div class="col-auto"><span>18 июля 2022</span></div>
+											<div class="col-auto"><span>17:19</span></div>
+										</div>
+										<p>Молодёжь Донецкой и&nbsp;Луганской народных республик получит до&nbsp;500&nbsp;тыс. рублей на&nbsp;социально значимые проекты</p>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a class="sMainBlock__news" href="#"><img class="res-i" src="img/news-img-1.png" alt="" loading="lazy"/>
+										<div class="row">
+											<div class="col-auto"><span>18 июля 2022</span></div>
+											<div class="col-auto"><span>17:19</span></div>
+										</div>
+										<p>&laquo;Порядочность и&nbsp;любовь к&nbsp;людям&raquo;: Вячеслав Володин рассказал участникам &laquo;Территории Смыслов&raquo;, каким должен быть политик</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a class="sMainBlock__btn btn btn-outline-primary" href="#">Показать еще
+						</a>
+					</div>
+				</section>
+				<!-- end sMainBlock-->
+				<!-- start sVideo-->
+				<section class="sVideo section" id="sVideo">
+					<div class="container">
+						<div class="sVideo__video-wrap"><iframe src="https://www.youtube.com/embed/L_LUpnjgPso" title="Fireplace 10 hours full HD" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</section>
+				<!-- end sVideo-->
 			</main>
 			<footer class="footer section">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-2"><a href="#"> <img src="img/svg/logo.svg" alt="" loading="lazy"/></a></div>
-						<div class="col">Footer</div>
-						<div class="col"></div>
-						<div class="col-auto"></div>
+					<div class="footer__row row">
+						<div class="col-md-12 col-lg-2"><a href="#"> <img src="img/svg/logo.svg" alt="" loading="lazy"/></a></div>
+						<div class="col-6 col-lg-2">
+							<ul>
+								<li><a href="#">Мероприятия</a></li>
+								<li><a href="#">Участники</a></li>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Гранты</a></li>
+								<li><a href="#">Опросы</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-lg-5">
+							<ul>
+								<li><a href="#">Помощь</a></li>
+								<li><a href="#">Профилактика негативных проявлений</a></li>
+								<li><a href="#">Мониторинг показателей федеральных проектов</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="col-md-12 col-lg-3">
+							<div class="footer__inner-row row">
+								<div class="col-12">
+									<div class="footer__title">Адрес
+									</div>
+									<div class="footer__text">109028, Москва, Большой Трехсвятительский переулок, д. 2/1, стр.&nbsp;2, Китай-город
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="row">
+										<div class="col">
+											<div class="footer__title">Понедельник&nbsp;&mdash; Четверг
+											</div>
+											<div class="footer__text">9:00&nbsp;&mdash; 18:00
+											</div>
+										</div>
+										<div class="col">
+											<div class="footer__title">Пятница
+											</div>
+											<div class="footer__text">9:00&nbsp;&mdash; 16:45
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="footer__title">Электронная почта
+									</div>
+									<a class="footer__text" href="mailto:Op@fadm.gov.ru">Op@fadm.gov.ru
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__col col">
+							<div class="soc">
+								<a class="soc__item" href="#" target="_blank">
+									<svg class="icon icon-vk ">
+										<use xlink:href="img/svg/sprite.svg#vk"></use>
+									</svg>
+								</a>
+								<a class="soc__item" href="#" target="_blank">
+									<svg class="icon icon-tg ">
+										<use xlink:href="img/svg/sprite.svg#tg"></use>
+									</svg>
+								</a>
+								<a class="soc__item" href="#" target="_blank">
+									<svg class="icon icon-ok ">
+										<use xlink:href="img/svg/sprite.svg#ok"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-auto col-lg-3">
+							<a class="footer__tel" href="tel:+74956688008">+7 (495) 668-80-08
+							</a>
+						</div>
+					</div>
+					<div class="footer__bottom-text">© 2008-2022 Федеральное агентство по делам молодежи (Росмолодёжь)
 					</div>
 				</div>
 			</footer>

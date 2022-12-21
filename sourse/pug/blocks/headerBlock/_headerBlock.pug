@@ -2,9 +2,18 @@ mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+			+e.slider--js.swiper
+				.swiper-wrapper
+					mixin slide()
+						+e.slide.swiper-slide
+							+img('img/svg/logo2.svg').img
+							h1 Росмолодёжь.События
+							.h3 платформа, на&nbsp;которой собраны события и&nbsp;мероприятия для молодых
+							+img('img/headerBlock-bg-1.png').bg.res-i
+					+slide()
+					+slide()
+					+slide()
+				+e.controls
+					+arrow
+					.swiper-pagination
 	// end headerBlock

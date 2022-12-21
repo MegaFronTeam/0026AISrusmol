@@ -381,6 +381,20 @@ function eventHandler() {
 
 	});
 
+	const headerBlockSwiper = new Swiper('.headerBlock__slider--js', {
+		slidesPerView: 1,
+		slidesPerView: 'auto',
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+
 	// modal window
 
 };

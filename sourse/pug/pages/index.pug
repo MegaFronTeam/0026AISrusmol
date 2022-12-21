@@ -12,10 +12,12 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/footer/_footer.pug
+include ../blocks/sMainBlock/_sMainBlock.pug
+include ../blocks/sVideo/_sVideo.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg= null
+	- let  bg= 'main.jpg'
 
 block title
 	- let  title= 'АИС Росмолодежь'
@@ -23,16 +25,58 @@ block title
 block pagecontent
 	//- +mob-mnu()
 	
-	
+	+mob-mnu()
 	+header()
 		+top-nav()
 		//- +topLine
 	main
-		+headerBlock 
-		+sCatalog
-		+sForm()
-		+sContact()
-		
+		+headerBlock
+		+sMainBlock('Мероприятия')
+			+e.row.row
+				mixin item(title, text, img)
+					.col-lg-6
+						+e.item
+							.row
+								+e.img-col.col-sm.order-sm-last
+									+e.img-wrap(href="#")
+										.img-wrap-center
+											+img(`img/${img}`, 'bg')
+								.col-sm
+									+e.content
+										a(href="#").h5!= title
+										p!= text
+				+item('Творческий конкурс молодых талантов &laquo;Стань звездой 2022&raquo;', '27 октября 2022 г. Чебоксары', 'mainblock-img-1.png')
+				+item('Творческий конкурс молодых талантов &laquo;Стань звездой 2022&raquo;', '27 октября 2022 г. Чебоксары', 'mainblock-img-1.png')
+				+item('Творческий конкурс молодых талантов &laquo;Стань звездой 2022&raquo;', '27 октября 2022 г. Чебоксары', 'mainblock-img-1.png')
+				+item('Творческий конкурс молодых талантов &laquo;Стань звездой 2022&raquo;', '27 октября 2022 г. Чебоксары', 'mainblock-img-1.png')
+		+sContact
+		+sMainBlock('Обучающие программы')
+			+e.row.row
+				mixin program(title, text, img)
+					.col-sm-6.col-lg-4
+						+e.program(href="#")&attributes(attributes)
+							+img(`img/${img}`)
+							h4!= title 
+							p!= text
+				+program('Академия<br>Росмолодёжь.Гранты', 'Учим запускать и&nbsp;масштабировать социальные проекты в&nbsp;России', 'program-img-1.png')(style="--bgColor: #DAEF14; --textColor: #252525;")
+				+program('Всероссийская программа по&nbsp;развитию молодёжного предпринимательства', 'Учим открывать<br>и&nbsp;развинтить своё дело', 'program-img-2.png')
+				+program('Обучающие курсы<br>от Росмолодёжи', 'Развивайся вместе с&nbsp;Росмолодёжью&nbsp;&mdash; ведь день, когда мы&nbsp;не&nbsp;узнали<br>новое&nbsp;&mdash; неудачный день', 'program-img-3.png')(style="--bgColor: #9D7DE0;")
+		+sMainBlock('Новости')
+			+e.row.row
+				mixin news(text, img)
+					.col-sm-6.col-lg-4
+						+e.news(href="#")
+							+img(`img/${img}`).res-i
+							.row
+								.col-auto
+									span 18 июля 2022
+								.col-auto
+									span 17:19
+							p!= text 
+				+news('Концерт на&nbsp;стройке и&nbsp;джаз на&nbsp;берегу моря: на&nbsp;&laquo;Тавриде&raquo; завершился самый музыкальный заезд сезона', 'news-img-1.png')
+				+news('Молодёжь Донецкой и&nbsp;Луганской народных республик получит до&nbsp;500&nbsp;тыс. рублей на&nbsp;социально значимые проекты', 'news-img-2.png')
+				+news('&laquo;Порядочность и&nbsp;любовь к&nbsp;людям&raquo;: Вячеслав Володин рассказал участникам &laquo;Территории Смыслов&raquo;, каким должен быть политик', 'news-img-1.png')
+		+sVideo
 	+footer()
       
 

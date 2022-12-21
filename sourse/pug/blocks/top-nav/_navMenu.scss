@@ -1,10 +1,10 @@
 .menu{
 	@include media-breakpoint-up(lg) {
 
-		display: flex;
-		text-align: center;
-		@include roww(20px);
-		flex-wrap: wrap;
+		// display: flex;
+		// // text-align: center;
+		// @include roww(20px);
+		// flex-wrap: wrap;
 	}
 
 	list-style: none;
@@ -84,16 +84,16 @@
 .menu-mobile {
 	position: fixed !important;
 	z-index: 999;
-	max-width: 85%;
+	max-width: 100%;
 	// height: calc(var(--vh, 1vh) * 100);
 	// height: 100vh;
-	width: 280px;
+	width: 792px;
 	top: 0;
 	// left: 0;
-	right: 0;
+	left: 0;
 	background-color: $body-bg;
 	&:not(.active){
-		transform: translate3d(120%, 0,0);
+		transform: translate3d(-200%, 0,0);
 		--opacity: 0;
 		.toggle-menu-mobile{
 			opacity: 0;
@@ -104,27 +104,33 @@
 
 	
 	.toggle-menu-mobile { 
-		margin-left: -15%;
-		position: absolute; 
-		left: 0;
-		right: auto;
+		// margin-left: -15%;
+		// position: absolute; 
+		// left: 0;
+		// right: auto;
 		color: #FFF;
-		top: 10px;
+		// top: 10px;
 		z-index: 9999; 
+		margin-bottom: rem(20);
 		span:after,
 		span:before {
-			--color: #ffffff;
+			--color: #{$primary};
 		}
 	}
 	&__inner {
-		padding: calc(env(safe-area-inset-top, 0px) + #{rem(20)}) 0 calc(env(safe-area-inset-bottom, 0px) + #{rem(20)});
+		padding: calc(env(safe-area-inset-top, 0px) + #{rem(36)}) rem(40) calc(env(safe-area-inset-bottom, 0px) + #{rem(36)}) rem(40);
 		overflow-x: hidden;
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
 		height: 100vh;
+		display: flex;
+		flex-direction: column;
 		// @include mt(.3s);
 		// transition-delay: .4s;
 		// opacity: var(--opacity);
+		@include media-breakpoint-up(md) {
+			padding: calc(env(safe-area-inset-top, 0px) + #{rem(36)}) rem(40) calc(env(safe-area-inset-bottom, 0px) + #{rem(36)}) rem(118);
+		}
 	}
 
 	&.active { 
@@ -141,14 +147,21 @@
 	li {
 		display: block;
 		margin: 0;
-		border-top: 1px solid rgba(255, 255, 255, .13);
-
+		// border-top: 1px solid rgba(255, 255, 255, .13);
+		padding: rem(16) 0;
 		a {
-			// font-size: 16px;
-
-			padding: 10px;
+			font-size: rem(20);
+			font-weight: 400;
+			padding: 0;
 			display: block;
-
+			@include media-breakpoint-up(md) {
+				font-size: rem(24);
+			}
 		}
+	}
+	&__row {
+		--bs-gutter-y: #{rem(16)};
+
+		margin-top: auto;
 	}
 }

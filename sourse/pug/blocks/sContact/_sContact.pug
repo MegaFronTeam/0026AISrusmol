@@ -2,8 +2,11 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			+e.row.row
+			+e.wrap
+				+img('img/sContact-img-1.png')
+				+e.content
+					h2 Стань участником
+					h3 Регистрация даёт расширенные возможности участникам
+					p Вы&nbsp;сможете принимать участие в&nbsp;мероприятиях и&nbsp;проектах, создавать собственную историю успеха, демонстрировать свои достижения, развитие компетенций и&nbsp;многое другое
+					a.btn.btn-primary(href='#') Подать заявку
 	// end sContact
