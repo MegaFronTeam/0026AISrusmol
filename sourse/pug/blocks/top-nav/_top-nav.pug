@@ -23,6 +23,9 @@ mixin mob-mnu()
 					+e.btn.btn.btn-secondary(href="#") Полная регистрация
 				.col-auto
 					+e.btn.btn.btn-secondary(href="#") Быстрая регистрация
+				
+
+
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
@@ -37,4 +40,11 @@ mixin top-nav()
 					+e.btn.btn.btn-secondary(href="#") Полная регистрация
 				.col-auto.d-none.d-md-block
 					+e.btn.btn.btn-secondary(href="#") Быстрая регистрация
+				.col-auto
+					+b.dropdown-block
+						+e.toggle Баранов Антон
+						+e.list 
+							+e.item(href="#") Мой кабинет
+							+e.item(href="#") Выйти
+
 	// end top-nav
