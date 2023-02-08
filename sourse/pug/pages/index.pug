@@ -66,7 +66,8 @@ block pagecontent
 				mixin news(text, img)
 					.col-sm-6.col-lg-4
 						+e.news(href="#")
-							+img(`img/${img}`).res-i
+							.news__picture-wrapper
+								+img(`img/${img}`).res-i
 							.row
 								.col-auto
 									span 18 июля 2022
