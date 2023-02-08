@@ -758,9 +758,11 @@ body input[type=radio].stylized+label:before {
 	position: relative;
 	@include block(550, 310);
 	border-radius: 32px;
-			margin-bottom: rem(16);
-			
+	margin-bottom: rem(16);
+	
 	img{
+		transform: translate3d(0,0,0);
+		border-radius: 32px;
 		position: absolute;
 		left: 0;
 		top: 0;

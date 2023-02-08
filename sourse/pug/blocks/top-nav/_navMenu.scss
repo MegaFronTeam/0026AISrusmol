@@ -29,6 +29,12 @@
 	--h: 2px;
 	--color: #{$primary};
 	--position: calc(var(--h) * 3);
+	&::after{
+		content: '';
+		@include a-cent1;
+		width: 180%;
+		height: 180%;
+	}
 	&.on span {
 		--color: transparent;
 	}
