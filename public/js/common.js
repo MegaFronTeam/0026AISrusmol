@@ -296,6 +296,11 @@ const JSCCommon = {
 	
 		convertImages('.img-svg-js');
   },
+	setSidePadding() {
+    var innerWidthWithoutScrollbar = $('body').innerWidth();
+		var sideBarPadding = window.innerWidth - innerWidthWithoutScrollbar + 'px';
+		document.querySelector(':root').style.setProperty('--sideBarPadding', sideBarPadding);
+  },
 };
 const $ = jQuery;
 
@@ -307,6 +312,7 @@ function eventHandler() {
 	// JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
+	JSCCommon.setSidePadding();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
 	
@@ -396,7 +402,6 @@ function eventHandler() {
 	});
 
 	// modal window
-
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

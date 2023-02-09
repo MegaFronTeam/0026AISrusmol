@@ -26,16 +26,10 @@ html{
 body {
 	&.fixed,
 	&.fancybox-active{
-		.header{ 
-			padding-right: var(--spacing-end);
-		}
-		margin-right: var(--spacing-end);
 		@include media-breakpoint-up(lg) {
-			padding-right: rem(17);
-		}
-		.header {
-			@include media-breakpoint-up(lg) {
-				padding-right: rem(17);
+			padding-right: var(--sideBarPadding);
+			.header{ 
+				padding-right: var(--sideBarPadding);
 			}
 		}
 	}
