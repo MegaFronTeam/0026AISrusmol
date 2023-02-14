@@ -124,6 +124,7 @@
 		transform: translateY(-50%);
 		border-radius: 15px;
 		z-index: -4;
+		right: 0;
 		@include media-breakpoint-down(sm) {
 			right: -29px;
 		}
