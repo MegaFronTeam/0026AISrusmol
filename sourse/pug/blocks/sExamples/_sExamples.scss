@@ -22,11 +22,15 @@
 	}
 	.bg-line-2 {
 		display: none;
-		@include media-breakpoint-up(xl) {
+		right: -297px;
+    // top: -650px;
+		@include media-breakpoint-up(lg) {
+			top: -300px;
 			display: block;
 		}
-		right: -297px;
-    top: -650px;
+		@include media-breakpoint-up(xxl) {
+			top: -650px;
+		}
 	}
 	picture {
 		@include media-breakpoint-down(sm) {
@@ -85,6 +89,11 @@
 		// align-items: center;
 		padding: rem(24) 0 rem(15);
 		border-bottom: 1px solid rgba(157, 125, 224, 0.39);
+		&:last-child {
+			@include media-breakpoint-down(lg) {
+				border-bottom: none;
+			}
+		}
 		img {
 			flex: 0 0 auto;
 			width: 100%;

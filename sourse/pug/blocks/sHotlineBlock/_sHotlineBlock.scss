@@ -120,18 +120,20 @@
 		box-shadow: -36px 37px 18px rgba(0, 0, 0, 0.25);
 		width: 100%;
 		max-width: rem(124);
-		right: 0;
 		top: 50%;
 		transform: translateY(-50%);
 		border-radius: 15px;
 		z-index: -4;
+		@include media-breakpoint-down(sm) {
+			right: -29px;
+		}
 		@include media-breakpoint-up(xxl) {
 			z-index: 4;
 		}
 		@include media-breakpoint-up(lg) {
 			border-radius: 53px;
-			bottom: rem(-545);
-			right: rem(-84);
+			bottom: rem(-479.400);
+			right: rem(-53.600);
 			max-width: rem(316);
 			top: unset;
 			transform: translateY(0);
