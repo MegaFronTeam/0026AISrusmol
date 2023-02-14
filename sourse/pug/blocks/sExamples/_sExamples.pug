@@ -2,12 +2,12 @@ mixin sExamples(data)
 	// start sExamples
 	+b.SECTION.sExamples.section#sExamples&attributes(attributes)
 		+e.container.container.custom-container
-			img(src='img/svg/bg-line-1.svg').bg-line-1
-			img(src='img/svg/bg-line-2.svg').bg-line-2
+			img(src='img/svg/bg-line-1.svg' alt='').bg-line-1
+			img(src='img/svg/bg-line-2.svg' alt='').bg-line-2
 			+e.wrap.bg-wrap
 				picture.picture-bg
 					source(media="(min-width: 576px)", srcset="img/sExamples-bg-1.jpg")
-					img(src='img/sExamples-bg-sm-1.jpg')
+					img(src='img/sExamples-bg-sm-1.jpg' alt='')
 				h2 Позвонить может любой желающий, чтобы узнать о&nbsp;проектах и&nbsp;возможностях для молодёжи в&nbsp;России, например:
 				+e.inner-wrap
 					+e.item 
