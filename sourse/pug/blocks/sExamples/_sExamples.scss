@@ -1,0 +1,112 @@
+// start .sExamples
+.sExamples {
+	--sPT: #{rem(12.5)};
+	--sPB: #{rem(13)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(67)};
+		--sPB: #{rem(44.5)};
+	}
+	&__container{
+		position: relative;
+		z-index: 1;
+	}
+	.bg-line-1, .bg-line-2 {
+		position: absolute;
+		z-index: -1;
+		pointer-events: none;
+	}
+	.bg-line-1 {
+		bottom: -320px;
+    left: -298px;
+	}
+	.bg-line-2 {
+		display: none;
+		@include media-breakpoint-up(xl) {
+			display: block;
+		}
+		right: -297px;
+    top: -650px;
+	}
+	picture {
+		@include media-breakpoint-down(sm) {
+			background-color: #000;
+			img{
+				width: 100%;
+			}
+		}
+		@include media-breakpoint-up(sm) {
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	&__wrap {
+		position: relative;
+		box-shadow: 0px 41px 57px rgba(0, 0, 0, 0.25);
+		padding: rem(20);
+		z-index: 1;
+		overflow: hidden;
+		border-radius: 24px;
+		@include media-breakpoint-up(lg) {
+			padding: rem(50) rem(64);
+			border-radius: 40px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			background-image: linear-gradient(180deg,rgba(0,0,0,.23),rgba(0,0,0,.54) 14.87%,#000 30.94%);
+			@include media-breakpoint-up(sm) {
+				background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1978) 0%, rgba(0, 0, 0, 0.4644) 31.77%, rgba(0, 0, 0, 0.86) 100%);
+			}
+		}
+		h2 {
+			color: #fff;
+			max-width: rem(800);
+			line-height: 1em;
+			margin-bottom: rem(25);
+		}
+	}
+	// &__inner-wrap {
+	// 	--bs-gutter-y:
+	// 	display: flex;
+	// 	flex-direction: column;
+	// }
+	&__item {
+		display: flex;
+		// align-items: center;
+		padding: rem(24) 0 rem(15);
+		border-bottom: 1px solid rgba(157, 125, 224, 0.39);
+		img {
+			flex: 0 0 auto;
+			width: 100%;
+			max-width: rem(32);
+			margin-right: rem(35);
+		}
+		h5 {
+			line-height: 1.23em;
+			color: #fff;
+			font-weight: 500;
+			margin-bottom: 0;
+			max-width: rem(594);
+			span {
+				color: $teal;
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sExamples

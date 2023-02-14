@@ -1,0 +1,32 @@
+extends ../layout/main.pug
+
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sSupportHead/_sSupportHead.pug
+include ../blocks/sExamples/_sExamples.pug
+include ../blocks/sSponsors/_sSponsors.pug
+include ../blocks/sHotlineBlock/_sHotlineBlock.pug
+include ../blocks/sSupportFooter/_sSupportFooter.pug
+
+block variables
+	- let  mainPage= 'support-page' 
+	- let  bg= ''
+
+block title
+	- let  title= 'Круглосуточная горячая линия'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+
+	+sSupportHead
+	main
+		+sHotlineBlock
+		+sExamples
+		+sSponsors
+	+sSupportFooter

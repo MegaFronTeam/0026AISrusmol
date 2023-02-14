@@ -1,0 +1,29 @@
+mixin sExamples(data)
+	// start sExamples
+	+b.SECTION.sExamples.section#sExamples&attributes(attributes)
+		+e.container.container.custom-container
+			img(src='img/svg/bg-line-1.svg').bg-line-1
+			img(src='img/svg/bg-line-2.svg').bg-line-2
+			+e.wrap.bg-wrap
+				picture.picture-bg
+					source(media="(min-width: 576px)", srcset="img/sExamples-bg-1.jpg")
+					img(src='img/sExamples-bg-sm-1.jpg')
+				h2 Позвонить может любой желающий, чтобы узнать о&nbsp;проектах и&nbsp;возможностях для молодёжи в&nbsp;России, например:
+				+e.inner-wrap
+					+e.item 
+						+img(`img/svg/sExamples-svg-1.svg`)
+						h5 зачем регистрироваться во&nbsp; #[span ФГАИС &laquo;Молодёжь России&raquo;]<br>и&nbsp;как там заполнить личный кабинет
+					+e.item 
+						+img(`img/svg/sExamples-svg-2.svg`)
+						h5 какие есть грантовые конкурсы и&nbsp;как получить от&nbsp;государства финансирование на&nbsp;реализацию своего социального проекта
+					+e.item 
+						+img(`img/svg/sExamples-svg-3.svg`)
+						h5 как присоединиться к&nbsp;волонтёрскому<br>движению в&nbsp;России
+					+e.item 
+						+img(`img/svg/sExamples-svg-4.svg`)
+						h5 на&nbsp;какие мероприятия Росмолодёжи и&nbsp;партнёров<br>сейчас открыта регистрация
+					+e.item 
+						+img(`img/svg/sExamples-svg-5.svg`)
+						h5 как попасть на&nbsp;работу в&nbsp;Росмолодёжь<br>и&nbsp;многое другое
+				
+	// end sExamples

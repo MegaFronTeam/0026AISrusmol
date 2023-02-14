@@ -1,0 +1,17 @@
+mixin sSupportHead(data)
+	// start sSupportHead
+	+b.HEADER.sSupportHead.section#sSupportHead&attributes(attributes)
+		+e.container.container.custom-container
+			+soc
+				+item-sos('vk')
+				+item-sos('tg2')
+				+item-sos('dzen')
+				+item-sos('ok2')
+				+item-sos('r')
+				+item-sos('tiktok')
+			+e.row.row
+				.col-auto
+					+e.logo(href="/"): +img('img/svg/logo3.svg')
+				.col-auto
+					+e.logo(href="#"): +img('img/logo5.png')
+	// end sSupportHead

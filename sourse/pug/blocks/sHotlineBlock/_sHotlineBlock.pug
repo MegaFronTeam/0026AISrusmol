@@ -1,0 +1,18 @@
+mixin sHotlineBlock(data)
+	// start sHotlineBlock
+	+b.SECTION.sHotlineBlock.section#sHotlineBlock&attributes(attributes)
+		+e.container.container.custom-container
+			+e.row.row
+				.col-lg-6.order-1
+					h1 Круглосуточная горячая линия 
+						span Росмолодёжь объясняет
+				.col-lg-6.order-3.order-lg-2
+					+e.text-wrap 
+						+e.text Федеральное агентство по&nbsp;делам молодёжи (Росмолодёжь) совместно с&nbsp;Фондом Росконгресс запустили Общероссийскую бесплатную горячую линию &laquo;Росмолодёжь объясняет&raquo;, где вы&nbsp;можете получить ответы на&nbsp;волнующие вопросы, связанные с&nbsp;государственной молодёжной политикой.
+						img(src='img/phone.png' alt='').phone
+				.col-lg-7.order-2.order-lg-3
+					+e.tel-wrap(href='tel:88003337737')
+						+e.tel-link 8 (800) 333 77-37
+						+e.icon-wrap: +icon('phone')
+						p круглосуточно, звонок бесплатный с любого телефона, зарегистрированного в России
+	// end sHotlineBlock
